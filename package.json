@@ -1,0 +1,17 @@
+{
+  "name": "coolify-app-test-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "hono": "^4.6.2"
+  }
+}
