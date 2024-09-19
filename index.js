@@ -7,14 +7,18 @@ function wait () {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			resolve();
-		}, 2000);
+		}, 1000);
 	});
 }
 
 app.get('/', async (context) => {
-	// waiting 2 seconds to test if deploys are zero downtime
+	// waiting 1 seconds to test if deploys are zero downtime
 	await wait();
-	return context.text('Hello Node.js!')
+	return context.text('Hello Coolify!');
+});
+
+app.get('/healthcheck', (context) => {
+	return context.text('OK');
 });
 
 serve(app);
